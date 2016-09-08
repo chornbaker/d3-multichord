@@ -8,7 +8,7 @@ A common example for d3.chord is the Uber dataset, showing trips between
 
 ## Installing
 
-If you use NPM, `npm install d3-multichord`. Otherwise, download the [latest release](https://github.com/d3/d3-multichord/releases/latest).
+If you use NPM, `npm install d3-multichord`. Otherwise, download the [latest release](https://github.com/chornbaker/d3-multichord/releases/latest).
 
 ## API Reference
 
