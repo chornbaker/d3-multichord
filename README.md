@@ -22,7 +22,7 @@ Constructs a new multichord layout with the default settings.
 
 Computes the chord layout for the specified *three-dimensional* *matrix* of shape *n*×*n*×*m*, where the *matrix* represents the directed flow amongst a network (a complete digraph) of *n* nodes, and links between nodes are classified into *m* categories. The given *matrix* must be an array of length *n*, where each element *matrix*[*i*] is an array of *n* numbers, where each *matrix*[*i*][*j*] represents the flow from the *i*th node in the network to the *j*th node, and each element *matrix*[*i*][*j*][*k*] is a an array of length *m* that represents the value of the flow from each of *m* categories. Each number within *matrix*[*i*][*j*][*k*] must be nonnegative, though it can be zero if there is no flow from node *i* to node *j* for that category. 
 
-Sample data from the [US Census Migration Data by Nativity Example](REFERENCE BLOCK HERE):
+Sample data from the [US Census Migration Data by Nativity Example]():
 
 ```js
 var matrix = [
