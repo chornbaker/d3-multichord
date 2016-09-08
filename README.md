@@ -31,9 +31,9 @@ var matrix = [
 ];
 ```
 
-The *chords* array also defines a secondary array of length *n*, *chords*.groups, where each group represents the combined inflow and outflow for node *i*, corresponding to the sum of the elements in *matrix*[*i*][0 … *n* - 1], and is an object with the following properties:
+The *chords* array also defines a secondary array of length *n*, *chords*.groups, where each group represents the combined inflow and outflow for node *i*, corresponding to the sum of the elements in *matrix*[*i*][0 … *n* - 1][0 … *m* - 1], and is an object with the following properties:
 
 * `startAngle` - the start angle in radians
 * `endAngle` - the end angle in radians
-* `value` - `in`: the total incoming flow value for node *i*; `out`: the total outgoing flow value for node *j*
+* `value` - `in`: the total incoming flow value for node *i*; `out`: the total outgoing flow value for node *i*
 * `index` - the node index *i*
