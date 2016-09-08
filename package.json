@@ -1,0 +1,41 @@
+{
+  "name": "d3-multichord",
+  "version": "0.0.1",
+  "description": "Circular layout for visualizing relationships or network flows. Modification of d3-chord to enable display of multiple categories of chords in the same chart.",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "chord",
+    "radial",
+    "network",
+    "flow",
+    "multichord"
+  ],
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Charles Hornbaker"
+  },
+  "main": "build/d3-multichord.js",
+  "jsnext:main": "index",
+  "homepage": "https://github.com/chornbaker/d3-multichord",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chornbaker/d3-multichord.git"
+  },
+  "scripts": {
+    "pretest": "rm -rf build && mkdir build && rollup -g d3-array:d3,d3-path:d3 -f umd -n d3 -o build/d3-multichord.js -- index.js",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "npm run test && uglifyjs build/d3-multichord.js -c -m -o build/d3-multichord.min.js",
+    "postpublish": "zip -j build/d3-multichord.zip -- LICENSE README.md build/d3-multichord.js build/d3-multichord.min.js"
+  },
+  "dependencies": {
+    "d3-array": "1",
+    "d3-path": "1"
+  },
+  "devDependencies": {
+    "rollup": "0.27",
+    "tap": "^7.1.0",
+    "tape": "4",
+    "uglify-js": "2"
+  }
+}
