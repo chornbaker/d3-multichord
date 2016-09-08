@@ -1,6 +1,6 @@
 {
   "name": "d3-multichord",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Circular layout for visualizing relationships or network flows. Modification of d3-chord to enable display of multiple categories of chords in the same chart.",
   "keywords": [
     "d3",

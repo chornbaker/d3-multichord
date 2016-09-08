@@ -1,6 +1,8 @@
 # d3-multichord
 
-Circular layout for visualizing relationships or network flows with multiple types. This is a modification of `d3-chord` to enable another dimension of data to be shown between nodes.
+###This is a modification of `d3-chord` to enable another dimension of data to be shown between nodes.
+
+Circular layout for visualizing relationships or network flows with multiple types. 
 
 A common example for d3.chord is the Uber dataset, showing trips between 
 
