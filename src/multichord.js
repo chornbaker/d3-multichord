@@ -16,7 +16,7 @@ export default function() {
       sortSubgroups = null,
       sortChords = null;
 
-  function chord(matrix) {
+  function multichord(matrix) {
     var n = matrix.length,
         nCategories = matrix[0][0].length,
         groupSums = {},
@@ -132,21 +132,21 @@ export default function() {
     return sortChords ? chords.sort(sortChords) : chords;
   }
 
-  chord.padAngle = function(_) {
-    return arguments.length ? (padAngle = max(0, _), chord) : padAngle;
+  multichord.padAngle = function(_) {
+    return arguments.length ? (padAngle = max(0, _), multichord) : padAngle;
   };
 
-  chord.sortGroups = function(_) {
-    return arguments.length ? (sortGroups = _, chord) : sortGroups;
+  multichord.sortGroups = function(_) {
+    return arguments.length ? (sortGroups = _, multichord) : sortGroups;
   };
 
-  chord.sortSubgroups = function(_) {
-    return arguments.length ? (sortSubgroups = _, chord) : sortSubgroups;
+  multichord.sortSubgroups = function(_) {
+    return arguments.length ? (sortSubgroups = _, multichord) : sortSubgroups;
   };
 
-  chord.sortChords = function(_) {
-    return arguments.length ? (_ == null ? sortChords = null : (sortChords = compareValue(_))._ = _, chord) : sortChords && sortChords._;
+  multichord.sortChords = function(_) {
+    return arguments.length ? (_ == null ? sortChords = null : (sortChords = compareValue(_))._ = _, multichord) : sortChords && sortChords._;
   };
 
-  return chord;
+  return multichord;
 }
