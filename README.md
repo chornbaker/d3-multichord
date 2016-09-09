@@ -4,8 +4,6 @@
 
 Circular layout for visualizing relationships or network flows with multiple types. 
 
-A common example for d3.chord is the Uber dataset, showing trips between 
-
 ## Installing
 
 If you use NPM, `npm install d3-multichord`. Otherwise, download the [latest release](https://github.com/chornbaker/d3-multichord/releases/latest).
