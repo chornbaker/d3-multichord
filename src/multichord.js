@@ -76,7 +76,9 @@ export default function() {
     // Convert the sum to scaling factor for [0, 2pi].
     // TODO Allow start and end angle to be specified?
     // TODO Allow padding to be specified as percentage?
-    z = max(0, tau - padAngle * n) / z;
+    if (z > 0) {
+      z = max(0, tau - padAngle * n) / z;
+    }
     dx = z ? padAngle : tau / n;
 
     // Compute the start and end angle for each group and subgroup.
